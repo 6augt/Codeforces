@@ -32,8 +32,30 @@ If someone were to ask me what steps they should take to solve any problem, I'd 
 3. Use logic and reasoning to go from the input to the required output.
 
 ## My Reasoning
-Let's begin with the input section.
+### Input
 
+> The first line contains two integers 𝑛 and 𝑚 (1≤𝑛,𝑚≤100), the number of rows and columns of the map.
+
+This means that `n` and `m` are both provided on the **same line**, with `n` representing the number of rows and `m` representing the number of columns.
+
+At first, we might think we can simply do:
+
+```python
+n, m = input(), input()
+```
+
+However, this would expect `n` and `m` to be entered on **separate lines**. Since the problem provides them on the same line, we instead use:
+
+```python
+n, m = map(int, input().split())
+```
+
+### Breakdown
+
+* `input()` reads the entire line.
+* `.split()` separates the two values.
+* `map(int, ...)` converts both values from strings into integers.
+* `n, m` assigns the two integers to their respective variables.
 
 
 ## My Mistakes
