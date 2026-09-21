@@ -50,13 +50,29 @@ However, this would expect `n` and `m` to be entered on **separate lines**. Sinc
 n, m = map(int, input().split())
 ```
 
-### Breakdown
+#### Breakdown
 
 * `input()` reads the entire line.
 * `.split()` separates the two values.
 * `map(int, ...)` converts both values from strings into integers.
 * `n, m` assigns the two integers to their respective variables.
 
+Also, there's another hidden input that might be easy to miss:
+
+> Each of the next 𝑛 lines contains a string of 𝑚 characters.
+
+This means that after declaring `n` and `m`, we also need to read the map itself. Each of the next `n` lines represents one row of the grid, containing `m` characters.
+
+We can store these rows inside a list:
+
+```python
+grid = []
+
+for row in range(n):
+    grid.append(input())
+```
+
+Here, `grid` will contain all the rows of the map, allowing us to access individual cells later using `grid[row][column]`.
 
 ## My Mistakes
 
