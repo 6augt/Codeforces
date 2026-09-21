@@ -9,6 +9,19 @@
 
 ## Instructions
 
+
+> The University of Texas Programming Club has lost track of where it is after staring at grid diagrams for too long. Fortunately, the club remembers one essential fact: Texas is shaped exactly like a size-1 plus sign. In this problem, a size-1 plus sign consists of five cells: a center cell and the four cells that share a side with it.
+>
+>You are given an 𝑛×𝑚 map describing UTPC and its surroundings. Every cell is either open or blocked off. Count the number of ways to place a size-1 plus sign on the grid, lying on only open cells. Two placements are considered different if their center cells are different.
+>
+>**Input**
+>The first line contains two integers 𝑛 and 𝑚 (1≤𝑛,𝑚≤100), the number of rows and columns of the map.
+>
+>Each of the next 𝑛 lines contains a string of 𝑚 characters. A character "." represents an open cell, and a character "#" represents a blocked cell.
+>
+>**Output**
+>Print one integer: the number of valid placements of Texas.
+
 ## Steps To Solve it
 When it comes to Codeforces problems, I always try to understand what is being said first and then try to code it.
 
